@@ -1,34 +1,42 @@
 export const Dogs = [
   {
-    breed: "Husky",
+    name: "Max",
+    breed: "husky",
     img: "https://dog.ceo/api/img/husky/n02110185_1469.jpg"
   },
   {
-    breed: "Shiba",
+    name: "Rusty",
+    breed: "shiba",
     img: "https://dog.ceo/api/img/shiba/shiba-13.jpg"
   },
   {
-    breed: "Boxer",
+    name: "Rocco",
+    breed: "boxer",
     img: "https://dog.ceo/api/img/boxer/n02108089_14112.jpg"
   },
   {
-    breed: "Beagle",
+    name: "Zoey",
+    breed: "beagle",
     img: "https://dog.ceo/api/img/beagle/n02088364_11136.jpg"
   },
   {
-    breed: "Doberman",
+    name: "Duke",
+    breed: "doberman",
     img: "https://dog.ceo/api/img/doberman/n02107142_4653.jpg"
   },
   {
-    breed: "Malamut",
+    name: "Lily",
+    breed: "malamute",
     img: "https://dog.ceo/api/img/malamute/n02110063_1104.jpg"
   },
   {
-    breed: "Pug",
+    name: "Winston",
+    breed: "pug",
     img: "https://dog.ceo/api/img/pug/n02110958_15626.jpg"
   },
   {
-    breed: "Samoyed",
+    name: "Angel",
+    breed: "samoyed",
     img: "https://dog.ceo/api/img/samoyed/n02111889_4470.jpg"
   }
 ];
