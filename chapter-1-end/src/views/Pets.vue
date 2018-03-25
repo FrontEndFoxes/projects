@@ -6,10 +6,18 @@
           <v-card-media src="https://goo.gl/6CQNDo" height="170px">
           </v-card-media>
           <v-card-title>
-            Looking for a dog?
+            <div>
+              <h3>Looking for a dog?</h3>
+            </div>
           </v-card-title>
         </v-card>
       </v-flex>
     </v-layout>
   </v-container>
 </template>
+
+<style scoped>
+p {
+  margin: 0;
+}
+</style>
