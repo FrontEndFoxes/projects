@@ -23,12 +23,12 @@
 
 <script>
 export default {
-  name: "App",
+  name: 'App',
   data() {
     return {
-      themeSwitched: false
+      themeSwitched: false,
     };
-  }
+  },
 };
 </script>
 

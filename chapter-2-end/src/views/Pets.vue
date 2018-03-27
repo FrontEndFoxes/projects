@@ -18,21 +18,23 @@
 </template>
 
 <script>
-import { Dogs } from "../data/dogs";
+import Dogs from '../data/dogs';
+
 export default {
   data() {
     return {
-      dogs: Dogs
+      dogs: Dogs,
     };
-  }
+  },
 };
 </script>
 
 <style scoped>
-p {
-  margin: 0;
-}
-.breed {
-  text-transform: capitalize;
-}
+  p {
+    margin: 0;
+  }
+
+  .breed {
+    text-transform: capitalize;
+  }
 </style>
