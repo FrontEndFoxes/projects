@@ -1,11 +1,11 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import Vue from 'vue';
+import Vuex from 'vuex';
 
 Vue.use(Vuex);
 
-export const store = new Vuex.Store({
+export default new Vuex.Store({
   state: {
-    cart: []
+    cart: [],
   },
   mutations: {
     addToCart(state, payload) {
@@ -15,14 +15,14 @@ export const store = new Vuex.Store({
     },
     removeFromCart(state, payload) {
       state.cart.splice(state.cart.indexOf(payload), 1);
-    }
+    },
   },
   actions: {
     addToCart({ commit }, payload) {
-      commit("addToCart", payload);
+      commit('addToCart', payload);
     },
     removeFromCart({ commit }, payload) {
-      commit("removeFromCart", payload);
-    }
-  }
+      commit('removeFromCart', payload);
+    },
+  },
 });
