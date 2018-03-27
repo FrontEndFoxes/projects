@@ -18,36 +18,40 @@
 </template>
 
 <script>
-import { Dogs } from "../data/dogs";
-import axios from "axios";
-axios.defaults.baseURL = "https://dog.ceo/api";
+import axios from 'axios';
+import Dogs from '../data/dogs';
+
+axios.defaults.baseURL = 'https://dog.ceo/api';
 export default {
   data() {
     return {
-      dogs: Dogs
+      dogs: Dogs,
     };
   },
   created() {
-    this.dogs.forEach(dog => (dog.img = ""));
+    this.dogs.forEach((dog) => {
+      dog.img = '';
+    });
     const linksArray = this.dogs.map(
-      dog => "/breed/" + dog.breed + "/images/random"
+      dog => `/breed/${dog.breed}/images/random`,
     );
     axios.all(linksArray.map(link => axios.get(link))).then(
       axios.spread((...res) => {
         this.dogs.forEach((dog, index) => {
           dog.img = res[index].data.message;
         });
-      })
+      }),
     );
-  }
+  },
 };
 </script>
 
 <style scoped>
-p {
-  margin: 0;
-}
-.breed {
-  text-transform: capitalize;
-}
+  p {
+    margin: 0;
+  }
+
+  .breed {
+    text-transform: capitalize;
+  }
 </style>

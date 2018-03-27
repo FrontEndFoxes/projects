@@ -1,12 +1,11 @@
 {
-  "name": "chapter-4-start",
+  "name": "chapter-3-end",
   "version": "1.0.0",
   "description": "",
   "main": "src/main.js",
   "private": true,
   "scripts": {
-    "dev":
-      "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
@@ -15,6 +14,8 @@
   },
   "dependencies": {
     "axios": "0.18.0",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^6.0.7",
     "vue": "^2.5.2",
     "vue-router": "3.0.1",
     "vuetify": "1.0.8"
@@ -74,6 +75,10 @@
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "keywords": []
 }
