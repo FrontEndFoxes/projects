@@ -1,6 +1,6 @@
-import Vue from "vue";
-import App from "./App";
-import Vuetify from "vuetify";
+import Vue from 'vue';
+import Vuetify from 'vuetify';
+import App from './App';
 
 Vue.use(Vuetify);
 
@@ -8,7 +8,7 @@ Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({
-  el: "#app",
+  el: '#app',
   components: { App },
-  template: "<App/>"
+  template: '<App/>',
 });
