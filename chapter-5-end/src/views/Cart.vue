@@ -9,7 +9,7 @@
             <img :src="dog.img">
           </v-list-tile-avatar>
           <v-list-tile-content>
-            <v-list-tile-title v-html="dog.name"></v-list-tile-title>
+            {{dog.name}}
           </v-list-tile-content>
           <v-list-tile-action>
             <v-icon @click="removeFromCart(dog)">delete</v-icon>
