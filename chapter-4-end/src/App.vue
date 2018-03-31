@@ -10,7 +10,7 @@
               <v-btn to="/pets" flat>Pets</v-btn>
             </v-toolbar-items>
             <v-spacer></v-spacer>
-            <router-link class="cart" to="/cart">
+            <router-link to="/cart">
               <v-badge color="grey lighten-1" overlap right v-model="cart.length">
                 <span slot="badge">{{cart.length}}</span>
                 <v-icon large>shopping_cart</v-icon>
