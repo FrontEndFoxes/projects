@@ -9,7 +9,7 @@
       </div>
     </v-card-title>
     <v-card-actions>
-      <v-btn @click="$emit('addToCart', dog)">Add to Cart</v-btn>
+      <v-btn @click="$emit('addToFavorites', dog)">Add to Favorites</v-btn>
     </v-card-actions>
   </v-card>
 </template>

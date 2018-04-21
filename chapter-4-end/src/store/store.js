@@ -5,24 +5,24 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    cart: [],
+    favorites: [],
   },
   mutations: {
-    addToCart(state, payload) {
-      if (state.cart.indexOf(payload) <= -1) {
-        state.cart.push(payload);
+    addToFavorites(state, payload) {
+      if (state.favorites.indexOf(payload) <= -1) {
+        state.favorites.push(payload);
       }
     },
-    removeFromCart(state, payload) {
-      state.cart.splice(state.cart.indexOf(payload), 1);
+    removeFromFavorites(state, payload) {
+      state.favorites.splice(state.favorites.indexOf(payload), 1);
     },
   },
   actions: {
-    addToCart({ commit }, payload) {
-      commit('addToCart', payload);
+    addToFavorites({ commit }, payload) {
+      commit('addToFavorites', payload);
     },
-    removeFromCart({ commit }, payload) {
-      commit('removeFromCart', payload);
+    removeFromFavorites({ commit }, payload) {
+      commit('removeFromFavorites', payload);
     },
   },
 });

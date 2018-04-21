@@ -4,7 +4,7 @@ import VueRouter from 'vue-router';
 import App from './App';
 import Home from './views/Home';
 import Pets from './views/Pets';
-import Cart from './views/Cart';
+import Favorites from './views/Favorites';
 import store from './store/store';
 
 Vue.use(Vuetify);
@@ -15,7 +15,7 @@ Vue.config.productionTip = false;
 const routes = [
   { path: '/', component: Home },
   { path: '/pets', component: Pets },
-  { path: '/cart', component: Cart },
+  { path: '/favorites', component: Favorites },
 ];
 
 const router = new VueRouter({ routes });

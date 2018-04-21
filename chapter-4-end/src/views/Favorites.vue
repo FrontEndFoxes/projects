@@ -1,10 +1,10 @@
 <template>
   <div>
     <v-list>
-      <v-subheader v-if="!cart.length">Your cart is empty</v-subheader>
+      <v-subheader v-if="!favorites.length">Your favorites list is empty</v-subheader>
       <div v-else class="text-xs-center">
-        <v-subheader>Your cart</v-subheader>
-        <v-list-tile avatar v-for="dog in cart" :key="dog.name" @click="{}">
+        <v-subheader>Your Favorites</v-subheader>
+        <v-list-tile avatar v-for="dog in favorites" :key="dog.name" @click="{}">
           <v-list-tile-avatar>
             <img :src="dog.img">
           </v-list-tile-avatar>
@@ -12,7 +12,7 @@
             {{dog.name}}
           </v-list-tile-content>
           <v-list-tile-action>
-            <v-icon @click="removeFromCart(dog)">delete</v-icon>
+            <v-icon @click="removeFromFavorites(dog)">delete</v-icon>
           </v-list-tile-action>
         </v-list-tile>
       </div>
@@ -25,12 +25,12 @@ import { mapActions } from 'vuex';
 
 export default {
   computed: {
-    cart() {
-      return this.$store.state.cart;
+    favorites() {
+      return this.$store.state.favorites;
     },
   },
   methods: {
-    ...mapActions(['removeFromCart']),
+    ...mapActions(['removeFromFavorites']),
   },
 };
 </script>

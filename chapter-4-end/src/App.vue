@@ -10,10 +10,10 @@
               <v-btn to="/pets" flat>Pets</v-btn>
             </v-toolbar-items>
             <v-spacer></v-spacer>
-            <router-link to="/cart">
-              <v-badge color="grey lighten-1" overlap right v-model="cart.length">
-                <span slot="badge">{{cart.length}}</span>
-                <v-icon large>shopping_cart</v-icon>
+            <router-link to="/favorites">
+              <v-badge color="grey lighten-1" overlap right v-model="favorites.length">
+                <span slot="badge">{{favorites.length}}</span>
+                <v-icon large>loyalty</v-icon>
               </v-badge>
             </router-link>
           </v-toolbar>
@@ -37,8 +37,8 @@ export default {
     };
   },
   computed: {
-    cart() {
-      return this.$store.state.cart;
+    favorites() {
+      return this.$store.state.favorites;
     },
   },
 };
