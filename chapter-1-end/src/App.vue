@@ -92,7 +92,7 @@ export default {
         font-family: "Roboto", "sans-serif";
         background: #fff top center repeat;
         color: #444;
-        background-image: url("./assets/bg.jpg");
+        background-image: url("https://raw.githubusercontent.com/VueVixens/projects/master/petshop/images/bg.jpg");
     }
 
     h1,
@@ -162,7 +162,7 @@ export default {
     */
 
     .orange-green {
-        background-image: url("./assets/bg2.jpg");
+        background-image: url("https://raw.githubusercontent.com/VueVixens/projects/master/petshop/images/bg2.jpg");
         .light-mint {
             background-color: #86a193;
         }
