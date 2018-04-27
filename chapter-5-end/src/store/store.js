@@ -1,34 +1,34 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from "vue";
+import Vuex from "vuex";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    cart: [],
+    favorites: []
   },
   mutations: {
-    addToCart(state, payload) {
-      if (state.cart.indexOf(payload) <= -1) {
-        state.cart.push(payload);
+    addToFavorites(state, payload) {
+      if (state.favorites.indexOf(payload) <= -1) {
+        state.favorites.push(payload);
       }
     },
-    removeFromCart(state, payload) {
-      state.cart.splice(state.cart.indexOf(payload), 1);
+    removeFromFavorites(state, payload) {
+      state.favorites.splice(state.favorites.indexOf(payload), 1);
     },
-    clearCart(state) {
-      state.cart = [];
-    },
+    clearFavorites(state) {
+      state.favorites = [];
+    }
   },
   actions: {
-    addToCart({ commit }, payload) {
-      commit('addToCart', payload);
+    addToFavorites({ commit }, payload) {
+      commit("addToFavorites", payload);
     },
-    removeFromCart({ commit }, payload) {
-      commit('removeFromCart', payload);
+    removeFromFavorites({ commit }, payload) {
+      commit("removeFromFavorites", payload);
     },
-    clearCart({ commit }) {
-      commit('clearCart');
-    },
-  },
+    clearFavorites({ commit }) {
+      commit("clearFavorites");
+    }
+  }
 });

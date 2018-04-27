@@ -1,7 +1,7 @@
 <template>
   <div class="form-wrapper">
     <div class="text-xs-center" v-if="submitted">
-      <h2>Thank you for you order, we will contact you soon</h2>
+      <h2>Thank you for your interest, we will contact you soon</h2>
       <div class="details text-xs-left">
         <h3>Customer details:</h3>
         <p><strong>Name:</strong> {{name}}</p>
@@ -55,9 +55,9 @@ export default {
     };
   },
   methods: {
-    ...mapActions(['clearCart']),
+    ...mapActions(['clearFavorites']),
     submit() {
-      this.clearCart();
+      this.clearFavorites();
       this.submitted = true;
     },
   },
