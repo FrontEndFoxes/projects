@@ -10,7 +10,7 @@
 
 <script>
 import axios from 'axios';
-import Dogs from '../data/dogs';
+import { Dogs } from '../data/dogs';
 import Dog from '../components/Dog';
 
 axios.defaults.baseURL = 'https://dog.ceo/api';
