@@ -22,16 +22,16 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions } from 'vuex';
 
 export default {
   computed: {
     favorites() {
       return this.$store.state.favorites;
-    }
+    },
   },
   methods: {
-    ...mapActions(["removeFromFavorites"])
-  }
+    ...mapActions(['removeFromFavorites']),
+  },
 };
 </script>

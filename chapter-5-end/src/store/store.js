@@ -1,11 +1,11 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import Vue from 'vue';
+import Vuex from 'vuex';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    favorites: []
+    favorites: [],
   },
   mutations: {
     addToFavorites(state, payload) {
@@ -18,17 +18,17 @@ export default new Vuex.Store({
     },
     clearFavorites(state) {
       state.favorites = [];
-    }
+    },
   },
   actions: {
     addToFavorites({ commit }, payload) {
-      commit("addToFavorites", payload);
+      commit('addToFavorites', payload);
     },
     removeFromFavorites({ commit }, payload) {
-      commit("removeFromFavorites", payload);
+      commit('removeFromFavorites', payload);
     },
     clearFavorites({ commit }) {
-      commit("clearFavorites");
-    }
-  }
+      commit('clearFavorites');
+    },
+  },
 });
