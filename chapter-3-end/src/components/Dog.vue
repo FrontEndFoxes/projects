@@ -1,7 +1,7 @@
 <template>
   <v-card color="grey lighten-2">
-    <v-card-media :src="dog.img" height="170px">
-    </v-card-media>
+    <v-img :src="dog.img" height="170px">
+    </v-img>
     <v-card-title>
       <div>
         <h3>{{dog.name}}</h3>
@@ -20,11 +20,11 @@ export default {
 </script>
 
 <style scoped>
-  p {
-    margin: 0;
-  }
+p {
+  margin: 0;
+}
 
-  .breed {
-    text-transform: capitalize;
-  }
+.breed {
+  text-transform: capitalize;
+}
 </style>
