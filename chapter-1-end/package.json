@@ -13,10 +13,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "node-sass": "^4.8.3",
-    "sass-loader": "^6.0.7",
     "vue": "^2.5.2",
-    "vuetify": "1.0.8"
+    "vuetify": "^1.2.10"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -49,6 +47,7 @@
     "jest": "^22.0.4",
     "jest-serializer-vue": "^0.3.0",
     "node-notifier": "^5.1.2",
+    "node-sass": "^4.9.4",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
     "portfinder": "^1.0.13",
@@ -56,6 +55,7 @@
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.2.1",
     "rimraf": "^2.6.0",
+    "sass-loader": "^6.0.7",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
