@@ -1,11 +1,9 @@
 <template>
   <v-card class="dog-card">
-    <v-card-media
-      height="150px"
-      :src="dog"></v-card-media>
+    <v-img height="150px" :src="dog"></v-img>
     <v-card-actions>
       <v-spacer></v-spacer>
-      <v-btn icon @click="$emit('remove')">
+      <v-btn icon @click="removeFromFavorites(index)">
         <v-icon>delete</v-icon>
       </v-btn>
     </v-card-actions>
@@ -16,8 +14,8 @@
 export default {
   props: {
     dog: {
-      type: String,
-    },
-  },
+      type: String
+    }
+  }
 };
 </script>
