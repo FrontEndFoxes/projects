@@ -1,6 +1,6 @@
 {
   "name": "chapter-1-end",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "src/main.js",
   "private": true,
@@ -13,8 +13,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "vue": "^2.5.2",
-    "vuetify": "^1.2.10"
+    "vue": "^2.6.2",
+    "vuetify": "^2.0.19"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
