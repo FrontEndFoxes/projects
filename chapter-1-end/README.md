@@ -1,10 +1,12 @@
-# test-project
+# Chapter 1 - Scaffold a web app
 
-> A Vue.js project
+> A Vue.js project to find pets
+
+This is the first chapter of [workshops](https://workshops.vuevixens.org) run by Vue Vixens. If you get lost during the event or while working on your own, upload a copy of this code into CodeSandbox to keep progressing. Please note, the base structure of the project is different here, vs. in CodeSandbox, but the main files that you work with (App.vue, main.js) are in place.
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
