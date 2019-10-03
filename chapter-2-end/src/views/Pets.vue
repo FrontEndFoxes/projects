@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Dogs from '../data/dogs';
+import { Dogs } from '../data/dogs';
 import Dog from '../components/Dog';
 
 export default {
