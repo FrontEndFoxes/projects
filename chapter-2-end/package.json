@@ -13,8 +13,6 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "node-sass": "^4.8.3",
-    "sass-loader": "^6.0.7",
     "vue": "^2.6.2",
     "vue-router": "^3.0.1",
     "vuetify": "^2.1.1"
@@ -68,7 +66,9 @@
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.11.5",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^6.0.7"
   },
   "engines": {
     "node": ">= 6.0.0",
