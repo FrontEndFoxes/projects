@@ -6,11 +6,9 @@
         <v-subheader>Your Favorites</v-subheader>
         <v-list-tile avatar v-for="dog in favorites" :key="dog.name" @click="{}">
           <v-list-tile-avatar>
-            <img :src="dog.img">
+            <img :src="dog.img" />
           </v-list-tile-avatar>
-          <v-list-tile-content>
-            {{dog.name}}
-          </v-list-tile-content>
+          <v-list-tile-content>{{dog.name}}</v-list-tile-content>
           <v-list-tile-action>
             <v-icon @click="removeFromFavorites(dog)">delete</v-icon>
           </v-list-tile-action>
@@ -21,16 +19,16 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex';
+import { mapActions } from "vuex";
 
 export default {
   computed: {
     favorites() {
       return this.$store.state.favorites;
-    },
+    }
   },
   methods: {
-    ...mapActions(['removeFromFavorites']),
-  },
+    ...mapActions(["removeFromFavorites"])
+  }
 };
 </script>
