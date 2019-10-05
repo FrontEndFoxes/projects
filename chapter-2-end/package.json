@@ -1,7 +1,7 @@
 {
   "name": "chapter-2-end",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Vue Vixens Chapter 2 End",
   "main": "src/main.js",
   "private": true,
   "scripts": {

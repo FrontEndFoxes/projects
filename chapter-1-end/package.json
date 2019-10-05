@@ -1,7 +1,7 @@
 {
   "name": "chapter-1-end",
   "version": "2.0.0",
-  "description": "",
+  "description": "Vue Vixens Chapter 1 Workshop",
   "main": "src/main.js",
   "private": true,
   "scripts": {
