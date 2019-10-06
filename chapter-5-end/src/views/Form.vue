@@ -36,7 +36,7 @@ export default {
       submitted: false,
       name: '',
       email: '',
-      phone: null,
+      phone: '',
       valid: true,
       nameRules: [
         v => !!v || 'Name is required',
