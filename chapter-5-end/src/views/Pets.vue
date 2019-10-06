@@ -9,39 +9,39 @@
 </template>
 
 <script>
-import axios from 'axios';
-import { mapActions } from 'vuex';
-import Dogs from '../data/dogs';
-import Dog from '../components/Dog';
+import axios from "axios";
+import { mapActions } from "vuex";
+import { Dogs } from "../data/dogs";
+import Dog from "../components/Dog";
 
-axios.defaults.baseURL = 'https://dog.ceo/api';
+axios.defaults.baseURL = "https://dog.ceo/api";
 export default {
   components: {
-    appDog: Dog,
+    appDog: Dog
   },
   data() {
     return {
-      dogs: Dogs,
+      dogs: Dogs
     };
   },
   methods: {
-    ...mapActions(['addToFavorites']),
+    ...mapActions(["addToFavorites"])
   },
   created() {
     // eslint-disable-next-line
     this.dogs.forEach(dog => {
-      dog.img = '';
+      dog.img = "";
     });
     const linksArray = this.dogs.map(
-      dog => `/breed/${dog.breed}/images/random`,
+      dog => "/breed/" + dog.breed + "/images/random`
     );
     axios.all(linksArray.map(link => axios.get(link))).then(
       axios.spread((...res) => {
         this.dogs.forEach((dog, index) => {
           dog.img = res[index].data.message;
         });
-      }),
+      })
     );
-  },
+  }
 };
 </script>
