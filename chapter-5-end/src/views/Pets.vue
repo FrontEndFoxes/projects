@@ -33,7 +33,7 @@ export default {
       dog.img = "";
     });
     const linksArray = this.dogs.map(
-      dog => "/breed/" + dog.breed + "/images/random`
+      dog => "/breed/" + dog.breed + "/images/random"
     );
     axios.all(linksArray.map(link => axios.get(link))).then(
       axios.spread((...res) => {
