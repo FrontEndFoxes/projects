@@ -17,7 +17,7 @@
                     required :rules="emailRules"
                     label="E-mail"></v-text-field>
       <v-text-field v-model="phone"
-                    required mask="(###) ### - ####"
+                    required v-mask="'(###) ### - ####'"
                     :rules="phoneRules"
                     label="Phone"></v-text-field>
       <v-btn @click="submit" :disabled="!valid">
@@ -29,8 +29,12 @@
 
 <script>
 import { mapActions } from 'vuex';
+import { mask } from 'vue-the-mask';
 
 export default {
+  directives: {
+    mask,
+  },
   data() {
     return {
       submitted: false,
