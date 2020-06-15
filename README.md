@@ -1,6 +1,6 @@
-# Sample Petshop Template
+# Workshop Solutions
 
-This is a sample markdown file that shows how to build this site.
+The folders in this repo include the solutions for our Front-End Foxes workshops.
 
-The docs for the workshop are here: https://vuevixens.github.io/docs/#/
+The docs for the workshops are here: https://workshops.frontendfoxes.com. Learn more about our initiative here: https://www.frontendfoxes.org.
 
