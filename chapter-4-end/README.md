@@ -1,4 +1,4 @@
-# Chapter 4 - Create and Adoption Experience
+# Chapter 4 - Create an Adoption Experience
 
 > A Vue.js project to find pets
 
