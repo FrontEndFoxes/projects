@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <main :class="{'orange-green': themeSwitched}">
+    <main :class="{ 'orange-green': themeSwitched }">
       <div class="app-container">
         <header class="app-header dark-brown">
           <h1>My Pet Store</h1>
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'App',
+  name: "App",
   data() {
     return {
       themeSwitched: false,
@@ -58,7 +58,7 @@ main {
   font-family: "Roboto", "sans-serif";
   background: #fff top center repeat;
   color: #444;
-  background-image: url("https://raw.githubusercontent.com/VueVixens/projects/master/petshop/images/bg.jpg");
+  background-image: url("https://raw.githubusercontent.com/VueVixens/projects/main/petshop/images/bg.jpg");
 }
 
 h1,
@@ -128,7 +128,7 @@ light green 86a193
 */
 
 .orange-green {
-  background-image: url("https://raw.githubusercontent.com/VueVixens/projects/master/petshop/images/bg2.jpg");
+  background-image: url("https://raw.githubusercontent.com/VueVixens/projects/main/petshop/images/bg2.jpg");
   .light-mint {
     background-color: #86a193;
   }

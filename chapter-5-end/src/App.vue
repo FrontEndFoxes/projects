@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <main :class="{'orange-green': themeSwitched}">
+    <main :class="{ 'orange-green': themeSwitched }">
       <div class="app-container">
         <header class="app-header dark-brown">
           <h1>My Pet Store</h1>
@@ -11,8 +11,15 @@
             </v-toolbar-items>
             <v-spacer></v-spacer>
             <router-link to="/favorites">
-              <v-badge color="grey lighten-1" overlap right v-model="favorites.length">
-                <span slot="badge">{{favorites.length}}</span>
+              <v-badge
+                color="grey lighten-1"
+                overlap
+                right
+                v-model="favorites.length"
+              >
+                <template #badge>
+                  {{ favorites.length }}
+                </template>
                 <v-icon large>loyalty</v-icon>
               </v-badge>
             </router-link>
@@ -33,14 +40,14 @@ export default {
   name: "App",
   data() {
     return {
-      themeSwitched: false
+      themeSwitched: false,
     };
   },
   computed: {
     favorites() {
       return this.$store.state.favorites;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -70,7 +77,7 @@ main {
   font-family: "Roboto", "sans-serif";
   background: #fff top center repeat;
   color: #444;
-  background-image: url("https://raw.githubusercontent.com/VueVixens/projects/master/petshop/images/bg.jpg");
+  background-image: url("https://raw.githubusercontent.com/VueVixens/projects/main/petshop/images/bg.jpg");
 }
 
 h1,
@@ -140,7 +147,7 @@ img {
   */
 
 .orange-green {
-  background-image: url("https://raw.githubusercontent.com/VueVixens/projects/master/petshop/images/bg2.jpg");
+  background-image: url("https://raw.githubusercontent.com/VueVixens/projects/main/petshop/images/bg2.jpg");
   .light-mint {
     background-color: #86a193;
   }
