@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-content class="dogs-layout">
+    <v-main class="dogs-layout">
       <v-container fill-height>
         <div class="dogs-overlay">
           <h1 class="display-2 text-xs-center">Choose your favorite dogs</h1>
@@ -27,7 +27,7 @@
           </v-container>
         </div>
       </v-container>
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
