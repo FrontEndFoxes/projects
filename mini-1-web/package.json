@@ -17,7 +17,7 @@
     "node-sass": "^4.13.1",
     "sass-loader": "^7.0.1",
     "vue": "^2.5.2",
-    "vuetify": "^2.0.19"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
